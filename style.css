@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    color: #111;
+    /* width:  100% ; */
+    /* height:100% ; */
+
+}
+
+.col {
+    width: 10px;
+}
+
+#movable-element {
+    border: 1px solid green;
+    background-color: #00ff0033;
+    height: 100%;
+    width: 100%;
+  }
+
+.droppable-elements {
+    height: 700px;
+}
+
+.draggable-elements {
+    display: flex;
+    height: 4rem;
+    /* justify-content: center; */
+    /* margin: 2rem; */
+}
+
+.draggable {
+    /* height: 5rem; */
+    /* width: 5rem; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 4rem;
+    /* margin: 0rem 0.5rem; */
+    /* cursor:col-resize; */
+    /* touch-action: initial; */
+    /* transition: translate(-50%,-50%); */
+}
+
+.draggable:hover {
+    opacity: 0.5;
+
+}
+
+.droppable {
+    height: 100px;
+    width: 200px;
+
+    margin-left: 5%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px solid #111;
+
+    /* padding-top: -2rem; */
+    /* border: solid 2px black; */
+    /* transition: border-width 0.2s, transform 0.2s, background-color 0.4s; */
+}
+
+.droppable span {
+    font-size: 1.25rem;
+
+    pointer-events: none;
+    /* The element is never the target of pointer events */
+}
+
+/* Drag and Drop Related Styling */
+
+.droppable.droppable-hover {
+    background-color: #bee3f0;
+    border-width: 15px;
+    /* transform: scale(1.1);  */
+}
+
+.droppable.dropped {
+    border-style: solid;
+    color: #fff;
+
+}
+
+.droppable.dropped span {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    pointer-events: none;
+
+}
+
+.droppable.dropped img {
+    pointer-events: none;
+    opacity: 0.1;
+}
+
+.draggable.dragged {
+    user-select: none;
+    opacity: 0.1;
+    cursor: default;
+
+}
+
+.draggable.dragged:hover {
+    opacity: 0.1;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(160, 162, 158);
+    /* overflow: hidden; */
+position: static;
+}
+
+
+.header {
+    margin: 0%;
+    height: 25%;
+    width: 100%;
+    /* top: -1px; */
+    background-color: rgb(149, 237, 237);
+
+    position: static;
+
+}
+
+.footer {
+
+    bottom: 0px;
+    height: 25%;
+    background-color: rgb(149, 237, 237);
+    width: 100%;
+    position: fixed;
+
+
+
+}
+.draggable :hover{
+    width: 120px;
+
+}
+
+
+.col .droppable {
+    width: 43%;
+    height: 6rem;
+    text-align: center;
+    margin: 2rem;
+    border: solid 1px black;
+    margin-left: 25%;
+
+
+
+}
+
+
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100% auto;
+    margin: 1px;
+}
+
+.main .row {
+    position: relative;
+    /* float: left; */
+    /* margin-right: -50px; */
+    margin-top: 1%;
+}
+
+
+.main .col {
+
+    margin-left: 2rem;
+
+}
+
+.d0 {
+    top: 0;
+    left: -75rem;
+
+    position: absolute;
+}
+/* .d1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.d0 {
+    top: 0;
+    left: -90px;
+
+    position: absolute;
+}
+
+.d2 {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.d3 {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.d4 {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.d5 {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.d6 {
+    top: 0;
+    left: 0;
+    position: absolute;
+} */
+
+
+.fas {
+    animation-name: floating;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: normal; */
+    /* animation-direction: normal; */
+    /* margin-left: 50px; */
+    /* margin-top:-5rem; */
+
+}
+
+/*   
+  .first {
+    height: 200px;
+  
+  }
+  
+  .third {
+    height: 200px;
+  
+  } */
+
+/* .row {
+    height: ;
+    border: solid 1px black;
+    background-color: #BDEDFF;
+    padding: 2.5%;
+    /* opacity: 0.6; */
+/* } */
+
+
+/* .sam {
+    background-color: #EBECF0;
+    margin-left: -69%;
+    height: 30%;
+  
+  } */
+
+
+
+/* .draggable-elements .lal {
+    animation-name: floating;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 50px;
+    margin-top:12px;
+  
+  } */
+@keyframes floating {
+    0% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: translate(1598px);
+        opacity: 1;
+
+
+
+
+
+
+    }
+}
+
+/* .fas:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.fas:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.fas:nth-child(3) {
+    animation-delay: 7s;
+}
+
+.fas:nth-child(4) {
+    animation-delay: 29;
+}
+
+.fas:nth-child(5) {
+    animation-delay: 32s;
+}
+
+.fas:nth-child(6) {
+    animation-delay: 124s;
+}
+
+.fas:nth-child(7) {
+    animation-delay: 33s;
+}
+
+.fas:nth-child(5) {
+    animation-delay: 32s;
+}
+
+.fas:nth-child(6) {
+    animation-delay: 124s;
+}
+
+.fas:nth-child(7) {
+    animation-delay: 33s;
+} */

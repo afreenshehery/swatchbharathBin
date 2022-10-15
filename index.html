@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="row">
+        <div class="col">
+          <div
+            class="droppable"
+            style="background-color: #ffce56"
+            Metal-draggable-id="Metal"
+          >
+            <span>Metal</span>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="droppable"
+            style="background-color: red"
+            Glass-draggable-id="Glass"
+          >
+            <span>Glass</span>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="droppable"
+            style="background-color: green"
+            Ewaste-draggable-id="Ewaste"
+          >
+            <span>Electronic-waste</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="main">
+      <div class="row d0">
+        <div class="col d1">
+          <img
+            src="images/Paper waste/2x/Asset 18@2x.png"
+            ontouchmove="dragEnter(event)"
+            style="animation-delay: 0s; margin-left: 10px"
+            draggable="true"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Paper-1"
+          />
+          <img
+            src="images/Paper waste/2x/Asset 19@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Paper-2"
+          />
+        </div>
+
+        <div class="col b1">
+          <img
+            src="images/Paper waste/2x/Asset 20@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="120px"
+            height="180px"
+            alt=""
+            class="draggable fas"
+            id="Paper-3"
+          />
+          <img
+            src="images/Paper waste/2x/Asset 21@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Paper-4"
+          />
+        </div>
+
+        <div class="col b2">
+          <img
+            src="images/Plastic  waste/2x/Asset 40@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="140px"
+            height="94px"
+            alt=""
+            class="draggable fas"
+            id="Plastic-1"
+          />
+          <img
+            src="images/Plastic  waste/2x/Asset 41@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Plastic-2"
+          />
+        </div>
+
+        <div class="col b3">
+          <img
+            src="images/Paper waste/2x/Asset 18@2x.png"
+            ontouchmove="dragEnter(event)"
+            style="animation-delay: 0s"
+            draggable="true"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Paper-1"
+          />
+          <img
+            src="images/Paper waste/2x/Asset 19@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Paper-2"
+          />
+        </div>
+
+        <div class="col b2">
+          <img
+            src="images/Ewaste/2x/Asset 12@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Ewaste-3"
+          />
+          <img
+            src="images/Ewaste/2x/Asset 8@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Ewaste-4"
+          />
+        </div>
+
+        <div class="col b4">
+          <img
+            src="images/Paper waste/2x/Asset 22@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="43px"
+            alt=""
+            class="draggable fas"
+            id="Paper-5"
+          />
+          <img
+            src="images/Metal waste/2x/Asset 35@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Metal-1"
+          />
+        </div>
+        <div class="col d3">
+          <img
+            src="images//Ewaste/2x/Asset 10@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Ewaste-1"
+          />
+
+          <img
+            src="images/Ewaste/2x/Asset 11@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Ewaste-2"
+          />
+        </div>
+
+        <div class="col d4">
+          <img
+            src="images/Glass waste/2x/Asset 13@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Glass-1"
+          />
+          <img
+            src="images/Glass waste/2x/Asset 14@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Glass-2"
+          />
+        </div>
+        <!-- <div class="col d5">
+                <img src="images/Organic waste/2x/Asset 23@2x.png" draggable="true" style="animation-delay: 0s;" width="96px"
+                    height="96px" alt="" class="draggable fas" id="Organic-1">
+                <img src="images/Organic waste/2x/Asset 24@2x.png" draggable="true" style="animation-delay: 0s;" width="96px"
+                    height="96px" alt="" class="draggable fas" id="Organic-2">
+                <img src="images/Organic waste/2x/Asset 25@2x.png"draggable="true" style="animation-delay: 0s;" width="96px"
+                    height="96px" alt="" class="draggable fas" id="Organic-3">
+                <img src="images/Organic waste/2x/Asset 26@2x.png" draggable="true" style="animation-delay: 0s;" width="96px"
+                    height="96px" alt="" class="draggable fas" id="Organic-4">
+
+            </div> -->
+
+        <div class="col d5">
+          <!-- <img src="images/Organic waste/2x/Asset 27@2x.png" draggable="true" style="animation-delay: 0s;" width="96px"
+                    height="96px" alt="" class="draggable fas" id="Organic-5">
+                <img src="images/Organic waste/2x/Asset 27@2x.png" draggable="true" style="animation-delay: 0s;" width="96px"
+                    height="96px" alt="" class="draggable fas" id="Organic-5"> -->
+          <img
+            src="images/Glass waste/2x/Asset 17@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Glass-5"
+          />
+          <img
+            src="images/Ewaste/2x/Asset 9@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Ewaste-5"
+          />
+        </div>
+
+        <br />
+        <div class="col d5">
+          <img
+            src="images/Metal waste/2x/Asset 39@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Metal-5"
+          />
+          <img
+            src="images/Plastic  waste/2x/Asset 44@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Plastic-5"
+          />
+        </div>
+
+        <div class="col d6">
+          <img
+            src="images/Metal waste//2x/Asset 36@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Metal-2"
+          />
+          <img
+            src="images/Metal waste/2x/Asset 37@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Metal-4"
+          />
+        </div>
+
+        <div class="col d5">
+          <img
+            src="images/Metal waste/2x/Asset 38@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Metal-3"
+          />
+          <img
+            src="images/Metal waste/2x/Asset 39@2x.png"
+            draggable="true"
+            style="animation-delay: 0s"
+            width="96px"
+            height="96px"
+            alt=""
+            class="draggable fas"
+            id="Metal-5"
+          />
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="footer">
+      <div class="row">
+        <!-- <div class="col"> -->
+        <!-- <div class="droppable " style="background-color:cadetblue;" Organic-draggable-id="Organic">
+                    <span>Organic</span>
+                </div> -->
+        <!-- </div> -->
+        <div class="col">
+          <div
+            class="droppable"
+            style="background-color: #36a2eb"
+            Paper-draggable-id="Paper"
+          >
+            <span>Paper</span>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="droppable"
+            style="background-color: #9966ff"
+            Plastic-draggable-id="Plastic"
+          >
+            <span>Plastic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    s
+
+    <script src="./DragDropTouch.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
